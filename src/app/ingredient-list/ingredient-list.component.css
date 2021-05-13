@@ -1,0 +1,22 @@
+.list-title {
+  color: white;
+  background: rgb(248, 198, 33);
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+  border: 2px solid rgba(10, 10, 10, 0.2);
+}
+
+.list-body {
+  overflow-y: visible;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.list-body .card {
+  margin-bottom: 1.5rem;
+}
+
+

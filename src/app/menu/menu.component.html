@@ -1,0 +1,28 @@
+<div class="menu-container">
+  <div class="menu-cart">
+    <p>Selected Burger Ingredients:</p>
+    <div *ngIf="selected.length">Total = P{{ getTotal() }}</div>
+    <button *ngIf="selected.length" class="purchase-btn" (click)="submit()">Purchase</button>
+    <ul *ngIf="selected.length">
+      <li *ngFor="let item of selected">
+        {{ item.name }}
+        <div>
+            P {{ item.price }}
+        </div>
+        <button class="cancel-btn" (click)="cancel(item.id)">
+          Cancel
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="menu-items">
+    <app-ingredient-list
+      *ngFor="let item of ingredients"
+      [items]="item.items"
+      [label]="item.label"
+      [allowMultiple]="item.allowMultiple"
+      (added)="add($event)"
+    ></app-ingredient-list>
+  </div>
+</div>
+

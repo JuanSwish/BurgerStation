@@ -1,0 +1,46 @@
+.card {
+    overflow: hidden;
+    border: 5px solid rgba(7, 0, 4, 0.2);
+    display: flex;
+    flex-flow: column;
+    width: 220px;
+    margin-bottom: 1.5rem;
+    background-color: white;
+}
+
+.card-body {
+    padding: 1rem
+}
+
+.card-action {
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.card-image > img {
+    object-fit: cover;
+    width: 80%;
+    height: 100px;
+    border: 2px solid rgba(15, 1, 9, 0.2);
+}
+
+.card-title {
+    font-weight: 600;
+    margin-bottom: .5rem;
+    font-size: 1.3rem;
+    border: 2px solid rgba(12, 0, 7, 0.2);
+}
+
+.card-action button.card-btn {
+    color: rgb(10, 10, 10);
+    background: rgb(205, 58, 107);
+    padding: .4rem 1.2rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.card-action button.card-btn.remove-btn {
+    background: rgb(243, 101, 95);
+    margin-left: 2rem;
+}

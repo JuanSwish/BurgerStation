@@ -1,0 +1,13 @@
+<div class="list">
+  <div class="list-title">{{ label }}</div>
+  <div class="list-body">
+    <app-ingredient
+      *ngFor="let item of items"
+      [name]="item.name"
+      [price]="item.price"
+      [image]="item.image"
+      [id]="item.id"
+      (selected)="select($event)"
+    ></app-ingredient>
+  </div>
+</div>
